@@ -1,0 +1,24 @@
+//
+//  iOSAppGeneric.xcconfig
+//
+// 
+
+HEADER_SEARCH_PATHS="$SRCROOT/../include/PMPlayerSDK" "../" "$SRCROOT/External/MWPhotoBrowser/Classes" "$SRCROOT/External/ActionSheetPicker/libActionSheetPicker" "$SRCROOT/External/ActionSheetPicker/Pickers" "$SRCROOT/External/ActionSheetPicker/Example/Classes"
+
+// "$PMSEXTERN/talk/third_party/openssl-1.0.0/include"
+GENERAL_GCC_PREPROCESSOR_DEFINITIONS="POSIX=1" "IOS" "VERSION=@\"${PROJECT_VERSION}\"" "LOGGING=1"
+
+// Define the DEBUG macro in all debug builds
+GENERAL_OTHER_CFLAGS = $(OTHER_CFLAGS) -DPOSIX -DIOS
+
+//OTHER_LDFLAGS = $(OTHER_LDFLAGS) -lswscale -lavformat -lavdevice -lavcodec -lz -lavutil
+
+// Static libs can be included in bundles so make them position independent
+GCC_DYNAMIC_NO_PIC = NO
+
+// Let the user install by specifying the $DSTROOT with xcodebuild
+SKIP_INSTALL = NO
+
+PROJECT_VERSION=1.0.0.0
+
+ENABLE_BITCODE = NO

@@ -1,0 +1,40 @@
+//
+//  StaticLibraryTarget.xcconfig
+//
+//  These are static library target settings for libgtest.a. It
+//  is set in the "Based On:" dropdown in the "Target" info dialog.
+//  This file is based on the Xcode Configuration files in:
+//  http://code.google.com/p/google-toolbox-for-mac/
+// 
+
+#include "iOSAppGeneric.xcconfig"
+
+LIBRARY_SEARCH_PATHS="$SRCROOT/../lib"
+
+//GCC_PREPROCESSOR_DEFINITIONS=$(GENERAL_GCC_PREPROCESSOR_DEFINITIONS)  "LIBJINGLE_UNITTEST=1"
+
+
+// Define the DEBUG macro in all debug builds
+OTHER_CFLAGS =$(GENERAL_OTHER_CFLAGS) -DPOSIX  -DDEBUG=1 
+
+
+// Static libs can be included in bundles so make them position independent
+GCC_DYNAMIC_NO_PIC = NO
+
+
+// Deployment postprocessing is what triggers Xcode to strip, turn it off
+DEPLOYMENT_POSTPROCESSING = NO
+
+// Dead code stripping off
+DEAD_CODE_STRIPPING = NO
+
+// Debug symbols should be on obviously
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+
+
+// These are turned off to avoid STL incompatibilities with client code
+// // Turns on special C++ STL checks to "encourage" good STL use
+// GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) _GLIBCXX_DEBUG_PEDANTIC _GLIBCXX_DEBUG _GLIBCPP_CONCEPT_CHECKS
+
+// Strictest warning policy
+WARNING_CFLAGS = -Wall -Wendif-labels -Wnewline-eof -Wno-sign-compare -Wshadow

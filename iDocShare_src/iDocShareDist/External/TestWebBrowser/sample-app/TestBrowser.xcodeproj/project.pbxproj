@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71ED23B819447163002ACD24 /* BrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED23B5194470B2002ACD24 /* BrowserDelegate.m */; };
+		94DB988619DE4570009404ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B25F16F27BF800E37710 /* Foundation.framework */; };
+		94DB988B19DE4570009404ED /* libWebBrowser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94DB988A19DE4570009404ED /* libWebBrowser.h */; };
+		94DB988D19DE4570009404ED /* libWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DB988C19DE4570009404ED /* libWebBrowser.m */; };
+		94DB989419DE4570009404ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DB989319DE4570009404ED /* XCTest.framework */; };
+		94DB989519DE4570009404ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B25F16F27BF800E37710 /* Foundation.framework */; };
+		94DB989619DE4570009404ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B25D16F27BF800E37710 /* UIKit.framework */; };
+		94DB989919DE4570009404ED /* liblibWebBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DB988519DE4570009404ED /* liblibWebBrowser.a */; };
+		94DB989F19DE4570009404ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94DB989D19DE4570009404ED /* InfoPlist.strings */; };
+		94DB98A119DE4570009404ED /* libWebBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DB98A019DE4570009404ED /* libWebBrowserTests.m */; };
+		94DB98A819DE4636009404ED /* BrowserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF75ED418A17BFD007B317D /* BrowserModel.xcdatamodeld */; };
+		94DB98A919DE4636009404ED /* JSTools.js in Sources */ = {isa = PBXBuildFile; fileRef = FAF75EE118A17BFD007B317D /* JSTools.js */; };
+		94DB98AA19DE4636009404ED /* BrowserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF75E9418A17A77007B317D /* BrowserModel.xcdatamodeld */; };
+		94DB98AB19DE4636009404ED /* Tab.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54718D08D2A005E4834 /* Tab.m */; };
+		94DB98AC19DE4636009404ED /* BookmarksController.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54818D08D2A005E4834 /* BookmarksController.m */; };
+		94DB98AD19DE4636009404ED /* BookmarksFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54A18D08D2A005E4834 /* BookmarksFormController.m */; };
+		94DB98AE19DE4636009404ED /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54C18D08D2A005E4834 /* BrowserViewController.m */; };
+		94DB98AF19DE4636009404ED /* UIMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54F18D08D2A005E4834 /* UIMainView.m */; };
+		94DB98B019DE4636009404ED /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A210C118D091F700D65141 /* Reachability.m */; };
+		94DB98B119DE4636009404ED /* BookmarkFolderFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E55118D08D2A005E4834 /* BookmarkFolderFormController.m */; };
+		94DB98B219DE4636009404ED /* BookmarkImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E55318D08D2A005E4834 /* BookmarkImporter.m */; };
+		94DB98B319DE4636009404ED /* BookmarkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E55518D08D2A005E4834 /* BookmarkItem.m */; };
+		94DB98B419DE4636009404ED /* BrowserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED23B5194470B2002ACD24 /* BrowserDelegate.m */; };
+		94DB98B519DE4668009404ED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B3B816F38D3700E37710 /* SystemConfiguration.framework */; };
+		94DB98B619DE466F009404ED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B3B416F38C6500E37710 /* CoreData.framework */; };
+		94DB98B719DE4682009404ED /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B3B016F3863500E37710 /* libxml2.2.dylib */; };
+		94DB98B819DE468D009404ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B26116F27BF800E37710 /* CoreGraphics.framework */; };
+		94DB98B919DE4696009404ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B25D16F27BF800E37710 /* UIKit.framework */; };
+		B572E55718D08D2A005E4834 /* Tab.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54718D08D2A005E4834 /* Tab.m */; };
+		B572E55818D08D2A005E4834 /* BookmarksController.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54818D08D2A005E4834 /* BookmarksController.m */; };
+		B572E55918D08D2A005E4834 /* BookmarksFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54A18D08D2A005E4834 /* BookmarksFormController.m */; };
+		B572E55A18D08D2A005E4834 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54C18D08D2A005E4834 /* BrowserViewController.m */; };
+		B572E55B18D08D2A005E4834 /* UIMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E54F18D08D2A005E4834 /* UIMainView.m */; };
+		B572E55C18D08D2A005E4834 /* BookmarkFolderFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E55118D08D2A005E4834 /* BookmarkFolderFormController.m */; };
+		B572E55D18D08D2A005E4834 /* BookmarkImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E55318D08D2A005E4834 /* BookmarkImporter.m */; };
+		B572E55E18D08D2A005E4834 /* BookmarkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B572E55518D08D2A005E4834 /* BookmarkItem.m */; };
+		B5A210C218D091F700D65141 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A210C118D091F700D65141 /* Reachability.m */; };
+		FAA4557418A19A2E00B1BDF4 /* gsearch.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA4557118A19A2E00B1BDF4 /* gsearch.png */; };
+		FAA4557518A19A2E00B1BDF4 /* magglass.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA4557218A19A2E00B1BDF4 /* magglass.png */; };
+		FAA4557618A19A2E00B1BDF4 /* tab_add.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA4557318A19A2E00B1BDF4 /* tab_add.png */; };
+		FAA4557918A19D9500B1BDF4 /* unable_to_connect.html in Resources */ = {isa = PBXBuildFile; fileRef = FAA4557818A19D9500B1BDF4 /* unable_to_connect.html */; };
+		FAA4557B18A19F1E00B1BDF4 /* configure.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA4557A18A19F1E00B1BDF4 /* configure.png */; };
+		FAA4557D18A19F7A00B1BDF4 /* bookmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA4557C18A19F7A00B1BDF4 /* bookmarks.png */; };
+		FAC9B25E16F27BF800E37710 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B25D16F27BF800E37710 /* UIKit.framework */; };
+		FAC9B26016F27BF800E37710 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B25F16F27BF800E37710 /* Foundation.framework */; };
+		FAC9B26216F27BF800E37710 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B26116F27BF800E37710 /* CoreGraphics.framework */; };
+		FAC9B26816F27BF800E37710 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAC9B26616F27BF800E37710 /* InfoPlist.strings */; };
+		FAC9B26A16F27BF800E37710 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC9B26916F27BF800E37710 /* main.m */; };
+		FAC9B26E16F27BF800E37710 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC9B26D16F27BF800E37710 /* AppDelegate.m */; };
+		FAC9B27016F27BF800E37710 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC9B26F16F27BF800E37710 /* Default.png */; };
+		FAC9B27216F27BF800E37710 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC9B27116F27BF800E37710 /* Default@2x.png */; };
+		FAC9B27416F27BF800E37710 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC9B27316F27BF800E37710 /* Default-568h@2x.png */; };
+		FAC9B27716F27BF800E37710 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC9B27616F27BF800E37710 /* ViewController.m */; };
+		FAC9B3B116F3863500E37710 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B3B016F3863500E37710 /* libxml2.2.dylib */; };
+		FAC9B3B516F38C6500E37710 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B3B416F38C6500E37710 /* CoreData.framework */; };
+		FAC9B3B916F38D3700E37710 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC9B3B816F38D3700E37710 /* SystemConfiguration.framework */; };
+		FAF75E9618A17A77007B317D /* BookmarkFoldersForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF75E8118A17A77007B317D /* BookmarkFoldersForm.xib */; };
+		FAF75E9718A17A77007B317D /* BookmarkItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF75E8218A17A77007B317D /* BookmarkItem.xib */; };
+		FAF75E9818A17A77007B317D /* BookmarksForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF75E8318A17A77007B317D /* BookmarksForm.xib */; };
+		FAF75EA318A17A77007B317D /* import_bookmark_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = FAF75E8F18A17A77007B317D /* import_bookmark_howto.html */; };
+		FAF75EA418A17A77007B317D /* launch.html in Resources */ = {isa = PBXBuildFile; fileRef = FAF75E9018A17A77007B317D /* launch.html */; };
+		FAF75EA518A17A77007B317D /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF75E9118A17A77007B317D /* MainWindow-iPad.xib */; };
+		FAF75EA618A17A77007B317D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF75E9218A17A77007B317D /* MainWindow.xib */; };
+		FAF75EA718A17A77007B317D /* Bookmarks.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF75E9318A17A77007B317D /* Bookmarks.xib */; };
+		FAF75EA818A17A77007B317D /* BrowserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF75E9418A17A77007B317D /* BrowserModel.xcdatamodeld */; };
+		FAF75EE218A17BFD007B317D /* BrowserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF75ED418A17BFD007B317D /* BrowserModel.xcdatamodeld */; };
+		FAF75EE318A17BFD007B317D /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75ED718A17BFD007B317D /* arrow-left.png */; };
+		FAF75EE418A17BFD007B317D /* arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75ED818A17BFD007B317D /* arrow-right.png */; };
+		FAF75EE518A17BFD007B317D /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75ED918A17BFD007B317D /* bookmark.png */; };
+		FAF75EE618A17BFD007B317D /* cell_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75EDA18A17BFD007B317D /* cell_arrow.png */; };
+		FAF75EE718A17BFD007B317D /* delete_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75EDB18A17BFD007B317D /* delete_circle.png */; };
+		FAF75EE818A17BFD007B317D /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75EDC18A17BFD007B317D /* folder.png */; };
+		FAF75EE918A17BFD007B317D /* gray-pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75EDD18A17BFD007B317D /* gray-pixel.png */; };
+		FAF75EEA18A17BFD007B317D /* iphone_delete_button.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75EDE18A17BFD007B317D /* iphone_delete_button.png */; };
+		FAF75EEB18A17BFD007B317D /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75EDF18A17BFD007B317D /* refresh.png */; };
+		FAF75EEC18A17BFD007B317D /* tabs.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF75EE018A17BFD007B317D /* tabs.png */; };
+		FAF75EED18A17BFD007B317D /* JSTools.js in Sources */ = {isa = PBXBuildFile; fileRef = FAF75EE118A17BFD007B317D /* JSTools.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94DB989719DE4570009404ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC9B25216F27BF800E37710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94DB988419DE4570009404ED;
+			remoteInfo = libWebBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94DB988319DE4570009404ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				94DB988B19DE4570009404ED /* libWebBrowser.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		71ED23B4194470B2002ACD24 /* BrowserDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BrowserDelegate.h; path = ../Browser/BrowserDelegate.h; sourceTree = "<group>"; };
+		71ED23B5194470B2002ACD24 /* BrowserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserDelegate.m; path = ../Browser/BrowserDelegate.m; sourceTree = "<group>"; };
+		94DB988519DE4570009404ED /* liblibWebBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibWebBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		94DB988919DE4570009404ED /* libWebBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libWebBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		94DB988A19DE4570009404ED /* libWebBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libWebBrowser.h; sourceTree = "<group>"; };
+		94DB988C19DE4570009404ED /* libWebBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libWebBrowser.m; sourceTree = "<group>"; };
+		94DB989219DE4570009404ED /* libWebBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libWebBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94DB989319DE4570009404ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		94DB989C19DE4570009404ED /* libWebBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libWebBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		94DB989E19DE4570009404ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		94DB98A019DE4570009404ED /* libWebBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libWebBrowserTests.m; sourceTree = "<group>"; };
+		B572E54718D08D2A005E4834 /* Tab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tab.m; path = ../Browser/Tab.m; sourceTree = "<group>"; };
+		B572E54818D08D2A005E4834 /* BookmarksController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarksController.m; path = ../Browser/BookmarksController.m; sourceTree = "<group>"; };
+		B572E54918D08D2A005E4834 /* BookmarksFormController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarksFormController.h; path = ../Browser/BookmarksFormController.h; sourceTree = "<group>"; };
+		B572E54A18D08D2A005E4834 /* BookmarksFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarksFormController.m; path = ../Browser/BookmarksFormController.m; sourceTree = "<group>"; };
+		B572E54B18D08D2A005E4834 /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserViewController.h; path = ../Browser/BrowserViewController.h; sourceTree = "<group>"; };
+		B572E54C18D08D2A005E4834 /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserViewController.m; path = ../Browser/BrowserViewController.m; sourceTree = "<group>"; };
+		B572E54D18D08D2A005E4834 /* Tab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tab.h; path = ../Browser/Tab.h; sourceTree = "<group>"; };
+		B572E54E18D08D2A005E4834 /* UIMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIMainView.h; path = ../Browser/UIMainView.h; sourceTree = "<group>"; };
+		B572E54F18D08D2A005E4834 /* UIMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIMainView.m; path = ../Browser/UIMainView.m; sourceTree = "<group>"; };
+		B572E55018D08D2A005E4834 /* BookmarkFolderFormController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarkFolderFormController.h; path = ../Browser/BookmarkFolderFormController.h; sourceTree = "<group>"; };
+		B572E55118D08D2A005E4834 /* BookmarkFolderFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarkFolderFormController.m; path = ../Browser/BookmarkFolderFormController.m; sourceTree = "<group>"; };
+		B572E55218D08D2A005E4834 /* BookmarkImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarkImporter.h; path = ../Browser/BookmarkImporter.h; sourceTree = "<group>"; };
+		B572E55318D08D2A005E4834 /* BookmarkImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarkImporter.m; path = ../Browser/BookmarkImporter.m; sourceTree = "<group>"; };
+		B572E55418D08D2A005E4834 /* BookmarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarkItem.h; path = ../Browser/BookmarkItem.h; sourceTree = "<group>"; };
+		B572E55518D08D2A005E4834 /* BookmarkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarkItem.m; path = ../Browser/BookmarkItem.m; sourceTree = "<group>"; };
+		B572E55618D08D2A005E4834 /* BookmarksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarksController.h; path = ../Browser/BookmarksController.h; sourceTree = "<group>"; };
+		B5A210C018D091F700D65141 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../Browser/Reachability.h; sourceTree = "<group>"; };
+		B5A210C118D091F700D65141 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../Browser/Reachability.m; sourceTree = "<group>"; };
+		FAA4557118A19A2E00B1BDF4 /* gsearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gsearch.png; sourceTree = "<group>"; };
+		FAA4557218A19A2E00B1BDF4 /* magglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magglass.png; sourceTree = "<group>"; };
+		FAA4557318A19A2E00B1BDF4 /* tab_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_add.png; sourceTree = "<group>"; };
+		FAA4557818A19D9500B1BDF4 /* unable_to_connect.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = unable_to_connect.html; sourceTree = "<group>"; };
+		FAA4557A18A19F1E00B1BDF4 /* configure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = configure.png; sourceTree = "<group>"; };
+		FAA4557C18A19F7A00B1BDF4 /* bookmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmarks.png; sourceTree = "<group>"; };
+		FAC9B25A16F27BF800E37710 /* TestBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC9B25D16F27BF800E37710 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAC9B25F16F27BF800E37710 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAC9B26116F27BF800E37710 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAC9B26516F27BF800E37710 /* TestBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestBrowser-Info.plist"; sourceTree = "<group>"; };
+		FAC9B26716F27BF800E37710 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAC9B26916F27BF800E37710 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAC9B26B16F27BF800E37710 /* TestBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		FAC9B26C16F27BF800E37710 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAC9B26D16F27BF800E37710 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAC9B26F16F27BF800E37710 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FAC9B27116F27BF800E37710 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FAC9B27316F27BF800E37710 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FAC9B27516F27BF800E37710 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FAC9B27616F27BF800E37710 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FAC9B3B016F3863500E37710 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		FAC9B3B416F38C6500E37710 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FAC9B3B816F38D3700E37710 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FAF75E8118A17A77007B317D /* BookmarkFoldersForm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkFoldersForm.xib; sourceTree = "<group>"; };
+		FAF75E8218A17A77007B317D /* BookmarkItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkItem.xib; sourceTree = "<group>"; };
+		FAF75E8318A17A77007B317D /* BookmarksForm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarksForm.xib; sourceTree = "<group>"; };
+		FAF75E8F18A17A77007B317D /* import_bookmark_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = import_bookmark_howto.html; sourceTree = "<group>"; };
+		FAF75E9018A17A77007B317D /* launch.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = launch.html; sourceTree = "<group>"; };
+		FAF75E9118A17A77007B317D /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		FAF75E9218A17A77007B317D /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		FAF75E9318A17A77007B317D /* Bookmarks.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Bookmarks.xib; sourceTree = "<group>"; };
+		FAF75E9518A17A77007B317D /* BrowserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrowserModel.xcdatamodel; sourceTree = "<group>"; };
+		FAF75ED518A17BFD007B317D /* BrowserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrowserModel.xcdatamodel; sourceTree = "<group>"; };
+		FAF75ED718A17BFD007B317D /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-left.png"; sourceTree = "<group>"; };
+		FAF75ED818A17BFD007B317D /* arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-right.png"; sourceTree = "<group>"; };
+		FAF75ED918A17BFD007B317D /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
+		FAF75EDA18A17BFD007B317D /* cell_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_arrow.png; sourceTree = "<group>"; };
+		FAF75EDB18A17BFD007B317D /* delete_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_circle.png; sourceTree = "<group>"; };
+		FAF75EDC18A17BFD007B317D /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		FAF75EDD18A17BFD007B317D /* gray-pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-pixel.png"; sourceTree = "<group>"; };
+		FAF75EDE18A17BFD007B317D /* iphone_delete_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_delete_button.png; sourceTree = "<group>"; };
+		FAF75EDF18A17BFD007B317D /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		FAF75EE018A17BFD007B317D /* tabs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabs.png; sourceTree = "<group>"; };
+		FAF75EE118A17BFD007B317D /* JSTools.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSTools.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94DB988219DE4570009404ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB98B919DE4696009404ED /* UIKit.framework in Frameworks */,
+				94DB98B819DE468D009404ED /* CoreGraphics.framework in Frameworks */,
+				94DB98B719DE4682009404ED /* libxml2.2.dylib in Frameworks */,
+				94DB98B619DE466F009404ED /* CoreData.framework in Frameworks */,
+				94DB98B519DE4668009404ED /* SystemConfiguration.framework in Frameworks */,
+				94DB988619DE4570009404ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94DB988F19DE4570009404ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB989419DE4570009404ED /* XCTest.framework in Frameworks */,
+				94DB989919DE4570009404ED /* liblibWebBrowser.a in Frameworks */,
+				94DB989619DE4570009404ED /* UIKit.framework in Frameworks */,
+				94DB989519DE4570009404ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC9B25716F27BF800E37710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC9B3B916F38D3700E37710 /* SystemConfiguration.framework in Frameworks */,
+				FAC9B3B516F38C6500E37710 /* CoreData.framework in Frameworks */,
+				FAC9B3B116F3863500E37710 /* libxml2.2.dylib in Frameworks */,
+				FAC9B25E16F27BF800E37710 /* UIKit.framework in Frameworks */,
+				FAC9B26016F27BF800E37710 /* Foundation.framework in Frameworks */,
+				FAC9B26216F27BF800E37710 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94DB988719DE4570009404ED /* libWebBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				94DB988A19DE4570009404ED /* libWebBrowser.h */,
+				94DB988C19DE4570009404ED /* libWebBrowser.m */,
+				94DB988819DE4570009404ED /* Supporting Files */,
+			);
+			path = libWebBrowser;
+			sourceTree = "<group>";
+		};
+		94DB988819DE4570009404ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94DB988919DE4570009404ED /* libWebBrowser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94DB989A19DE4570009404ED /* libWebBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				94DB98A019DE4570009404ED /* libWebBrowserTests.m */,
+				94DB989B19DE4570009404ED /* Supporting Files */,
+			);
+			path = libWebBrowserTests;
+			sourceTree = "<group>";
+		};
+		94DB989B19DE4570009404ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94DB989C19DE4570009404ED /* libWebBrowserTests-Info.plist */,
+				94DB989D19DE4570009404ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAA4557718A19B2700B1BDF4 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4557C18A19F7A00B1BDF4 /* bookmarks.png */,
+				FAA4557A18A19F1E00B1BDF4 /* configure.png */,
+				FAA4557318A19A2E00B1BDF4 /* tab_add.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		FAC9B25116F27BF800E37710 = {
+			isa = PBXGroup;
+			children = (
+				FAF75E8018A17A59007B317D /* Browser Resources */,
+				FAF75E6A18A179D1007B317D /* Browser */,
+				FAC9B3B816F38D3700E37710 /* SystemConfiguration.framework */,
+				FAC9B3B416F38C6500E37710 /* CoreData.framework */,
+				FAC9B3B016F3863500E37710 /* libxml2.2.dylib */,
+				FAC9B26316F27BF800E37710 /* TestBrowser */,
+				94DB988719DE4570009404ED /* libWebBrowser */,
+				94DB989A19DE4570009404ED /* libWebBrowserTests */,
+				FAC9B25C16F27BF800E37710 /* Frameworks */,
+				FAC9B25B16F27BF800E37710 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC9B25B16F27BF800E37710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC9B25A16F27BF800E37710 /* TestBrowser.app */,
+				94DB988519DE4570009404ED /* liblibWebBrowser.a */,
+				94DB989219DE4570009404ED /* libWebBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC9B25C16F27BF800E37710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC9B25D16F27BF800E37710 /* UIKit.framework */,
+				FAC9B25F16F27BF800E37710 /* Foundation.framework */,
+				FAC9B26116F27BF800E37710 /* CoreGraphics.framework */,
+				94DB989319DE4570009404ED /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAC9B26316F27BF800E37710 /* TestBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				FAC9B26C16F27BF800E37710 /* AppDelegate.h */,
+				FAC9B26D16F27BF800E37710 /* AppDelegate.m */,
+				FAC9B27516F27BF800E37710 /* ViewController.h */,
+				FAC9B27616F27BF800E37710 /* ViewController.m */,
+				FAC9B26416F27BF800E37710 /* Supporting Files */,
+			);
+			path = TestBrowser;
+			sourceTree = "<group>";
+		};
+		FAC9B26416F27BF800E37710 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAC9B26516F27BF800E37710 /* TestBrowser-Info.plist */,
+				FAC9B26616F27BF800E37710 /* InfoPlist.strings */,
+				FAC9B26916F27BF800E37710 /* main.m */,
+				FAC9B26B16F27BF800E37710 /* TestBrowser-Prefix.pch */,
+				FAC9B26F16F27BF800E37710 /* Default.png */,
+				FAC9B27116F27BF800E37710 /* Default@2x.png */,
+				FAC9B27316F27BF800E37710 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF75E6A18A179D1007B317D /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				B572E54718D08D2A005E4834 /* Tab.m */,
+				B572E54818D08D2A005E4834 /* BookmarksController.m */,
+				B572E54918D08D2A005E4834 /* BookmarksFormController.h */,
+				B572E54A18D08D2A005E4834 /* BookmarksFormController.m */,
+				B572E54B18D08D2A005E4834 /* BrowserViewController.h */,
+				B572E54C18D08D2A005E4834 /* BrowserViewController.m */,
+				B572E54D18D08D2A005E4834 /* Tab.h */,
+				B572E54E18D08D2A005E4834 /* UIMainView.h */,
+				B572E54F18D08D2A005E4834 /* UIMainView.m */,
+				B572E55018D08D2A005E4834 /* BookmarkFolderFormController.h */,
+				B5A210C018D091F700D65141 /* Reachability.h */,
+				B5A210C118D091F700D65141 /* Reachability.m */,
+				B572E55118D08D2A005E4834 /* BookmarkFolderFormController.m */,
+				B572E55218D08D2A005E4834 /* BookmarkImporter.h */,
+				B572E55318D08D2A005E4834 /* BookmarkImporter.m */,
+				B572E55418D08D2A005E4834 /* BookmarkItem.h */,
+				B572E55518D08D2A005E4834 /* BookmarkItem.m */,
+				71ED23B4194470B2002ACD24 /* BrowserDelegate.h */,
+				71ED23B5194470B2002ACD24 /* BrowserDelegate.m */,
+				B572E55618D08D2A005E4834 /* BookmarksController.h */,
+			);
+			name = Browser;
+			path = ../Browser;
+			sourceTree = SOURCE_ROOT;
+		};
+		FAF75E8018A17A59007B317D /* Browser Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4557818A19D9500B1BDF4 /* unable_to_connect.html */,
+				FAF75ED418A17BFD007B317D /* BrowserModel.xcdatamodeld */,
+				FAF75ED618A17BFD007B317D /* Images */,
+				FAF75EE118A17BFD007B317D /* JSTools.js */,
+				FAF75E8118A17A77007B317D /* BookmarkFoldersForm.xib */,
+				FAF75E8218A17A77007B317D /* BookmarkItem.xib */,
+				FAF75E8318A17A77007B317D /* BookmarksForm.xib */,
+				FAF75E8F18A17A77007B317D /* import_bookmark_howto.html */,
+				FAF75E9018A17A77007B317D /* launch.html */,
+				FAF75E9118A17A77007B317D /* MainWindow-iPad.xib */,
+				FAF75E9218A17A77007B317D /* MainWindow.xib */,
+				FAF75E9318A17A77007B317D /* Bookmarks.xib */,
+				FAF75E9418A17A77007B317D /* BrowserModel.xcdatamodeld */,
+			);
+			name = "Browser Resources";
+			path = "../Browser Resources";
+			sourceTree = "<group>";
+		};
+		FAF75ED618A17BFD007B317D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4557718A19B2700B1BDF4 /* Buttons */,
+				FAA4557118A19A2E00B1BDF4 /* gsearch.png */,
+				FAF75ED918A17BFD007B317D /* bookmark.png */,
+				FAA4557218A19A2E00B1BDF4 /* magglass.png */,
+				FAF75ED718A17BFD007B317D /* arrow-left.png */,
+				FAF75ED818A17BFD007B317D /* arrow-right.png */,
+				FAF75EDA18A17BFD007B317D /* cell_arrow.png */,
+				FAF75EDB18A17BFD007B317D /* delete_circle.png */,
+				FAF75EDC18A17BFD007B317D /* folder.png */,
+				FAF75EDD18A17BFD007B317D /* gray-pixel.png */,
+				FAF75EDE18A17BFD007B317D /* iphone_delete_button.png */,
+				FAF75EDF18A17BFD007B317D /* refresh.png */,
+				FAF75EE018A17BFD007B317D /* tabs.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94DB988419DE4570009404ED /* libWebBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94DB98A619DE4571009404ED /* Build configuration list for PBXNativeTarget "libWebBrowser" */;
+			buildPhases = (
+				94DB988119DE4570009404ED /* Sources */,
+				94DB988219DE4570009404ED /* Frameworks */,
+				94DB988319DE4570009404ED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libWebBrowser;
+			productName = libWebBrowser;
+			productReference = 94DB988519DE4570009404ED /* liblibWebBrowser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		94DB989119DE4570009404ED /* libWebBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94DB98A719DE4571009404ED /* Build configuration list for PBXNativeTarget "libWebBrowserTests" */;
+			buildPhases = (
+				94DB988E19DE4570009404ED /* Sources */,
+				94DB988F19DE4570009404ED /* Frameworks */,
+				94DB989019DE4570009404ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94DB989819DE4570009404ED /* PBXTargetDependency */,
+			);
+			name = libWebBrowserTests;
+			productName = libWebBrowserTests;
+			productReference = 94DB989219DE4570009404ED /* libWebBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC9B25916F27BF800E37710 /* TestBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC9B28016F27BF800E37710 /* Build configuration list for PBXNativeTarget "TestBrowser" */;
+			buildPhases = (
+				FAC9B25616F27BF800E37710 /* Sources */,
+				FAC9B25716F27BF800E37710 /* Frameworks */,
+				FAC9B25816F27BF800E37710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBrowser;
+			productName = TestBrowser;
+			productReference = FAC9B25A16F27BF800E37710 /* TestBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC9B25216F27BF800E37710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Alexandru Catighera";
+				TargetAttributes = {
+					94DB989119DE4570009404ED = {
+						TestTargetID = FAC9B25916F27BF800E37710;
+					};
+				};
+			};
+			buildConfigurationList = FAC9B25516F27BF800E37710 /* Build configuration list for PBXProject "TestBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAC9B25116F27BF800E37710;
+			productRefGroup = FAC9B25B16F27BF800E37710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC9B25916F27BF800E37710 /* TestBrowser */,
+				94DB988419DE4570009404ED /* libWebBrowser */,
+				94DB989119DE4570009404ED /* libWebBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94DB989019DE4570009404ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB989F19DE4570009404ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC9B25816F27BF800E37710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF75EA518A17A77007B317D /* MainWindow-iPad.xib in Resources */,
+				FAA4557D18A19F7A00B1BDF4 /* bookmarks.png in Resources */,
+				FAF75EE918A17BFD007B317D /* gray-pixel.png in Resources */,
+				FAF75EE618A17BFD007B317D /* cell_arrow.png in Resources */,
+				FAF75EE718A17BFD007B317D /* delete_circle.png in Resources */,
+				FAF75E9818A17A77007B317D /* BookmarksForm.xib in Resources */,
+				FAF75EEC18A17BFD007B317D /* tabs.png in Resources */,
+				FAF75EE518A17BFD007B317D /* bookmark.png in Resources */,
+				FAF75EA318A17A77007B317D /* import_bookmark_howto.html in Resources */,
+				FAF75EA718A17A77007B317D /* Bookmarks.xib in Resources */,
+				FAC9B26816F27BF800E37710 /* InfoPlist.strings in Resources */,
+				FAF75EEA18A17BFD007B317D /* iphone_delete_button.png in Resources */,
+				FAF75EE318A17BFD007B317D /* arrow-left.png in Resources */,
+				FAA4557B18A19F1E00B1BDF4 /* configure.png in Resources */,
+				FAF75EA418A17A77007B317D /* launch.html in Resources */,
+				FAF75EE418A17BFD007B317D /* arrow-right.png in Resources */,
+				FAA4557518A19A2E00B1BDF4 /* magglass.png in Resources */,
+				FAC9B27016F27BF800E37710 /* Default.png in Resources */,
+				FAF75EE818A17BFD007B317D /* folder.png in Resources */,
+				FAA4557418A19A2E00B1BDF4 /* gsearch.png in Resources */,
+				FAA4557618A19A2E00B1BDF4 /* tab_add.png in Resources */,
+				FAF75EEB18A17BFD007B317D /* refresh.png in Resources */,
+				FAF75E9718A17A77007B317D /* BookmarkItem.xib in Resources */,
+				FAC9B27216F27BF800E37710 /* Default@2x.png in Resources */,
+				FAC9B27416F27BF800E37710 /* Default-568h@2x.png in Resources */,
+				FAF75EA618A17A77007B317D /* MainWindow.xib in Resources */,
+				FAF75E9618A17A77007B317D /* BookmarkFoldersForm.xib in Resources */,
+				FAA4557918A19D9500B1BDF4 /* unable_to_connect.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94DB988119DE4570009404ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB98A819DE4636009404ED /* BrowserModel.xcdatamodeld in Sources */,
+				94DB98A919DE4636009404ED /* JSTools.js in Sources */,
+				94DB98AA19DE4636009404ED /* BrowserModel.xcdatamodeld in Sources */,
+				94DB98AB19DE4636009404ED /* Tab.m in Sources */,
+				94DB98AC19DE4636009404ED /* BookmarksController.m in Sources */,
+				94DB98AD19DE4636009404ED /* BookmarksFormController.m in Sources */,
+				94DB98AE19DE4636009404ED /* BrowserViewController.m in Sources */,
+				94DB98AF19DE4636009404ED /* UIMainView.m in Sources */,
+				94DB98B019DE4636009404ED /* Reachability.m in Sources */,
+				94DB98B119DE4636009404ED /* BookmarkFolderFormController.m in Sources */,
+				94DB98B219DE4636009404ED /* BookmarkImporter.m in Sources */,
+				94DB98B319DE4636009404ED /* BookmarkItem.m in Sources */,
+				94DB98B419DE4636009404ED /* BrowserDelegate.m in Sources */,
+				94DB988D19DE4570009404ED /* libWebBrowser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94DB988E19DE4570009404ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB98A119DE4570009404ED /* libWebBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC9B25616F27BF800E37710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71ED23B819447163002ACD24 /* BrowserDelegate.m in Sources */,
+				B572E55D18D08D2A005E4834 /* BookmarkImporter.m in Sources */,
+				B572E55918D08D2A005E4834 /* BookmarksFormController.m in Sources */,
+				B572E55E18D08D2A005E4834 /* BookmarkItem.m in Sources */,
+				FAF75EA818A17A77007B317D /* BrowserModel.xcdatamodeld in Sources */,
+				B5A210C218D091F700D65141 /* Reachability.m in Sources */,
+				B572E55718D08D2A005E4834 /* Tab.m in Sources */,
+				FAF75EE218A17BFD007B317D /* BrowserModel.xcdatamodeld in Sources */,
+				FAC9B26A16F27BF800E37710 /* main.m in Sources */,
+				FAC9B26E16F27BF800E37710 /* AppDelegate.m in Sources */,
+				B572E55B18D08D2A005E4834 /* UIMainView.m in Sources */,
+				B572E55818D08D2A005E4834 /* BookmarksController.m in Sources */,
+				B572E55A18D08D2A005E4834 /* BrowserViewController.m in Sources */,
+				FAC9B27716F27BF800E37710 /* ViewController.m in Sources */,
+				FAF75EED18A17BFD007B317D /* JSTools.js in Sources */,
+				B572E55C18D08D2A005E4834 /* BookmarkFolderFormController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94DB989819DE4570009404ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94DB988419DE4570009404ED /* libWebBrowser */;
+			targetProxy = 94DB989719DE4570009404ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94DB989D19DE4570009404ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94DB989E19DE4570009404ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAC9B26616F27BF800E37710 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC9B26716F27BF800E37710 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94DB98A219DE4571009404ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/libWebBrowser.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libWebBrowser/libWebBrowser-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		94DB98A319DE4571009404ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/libWebBrowser.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libWebBrowser/libWebBrowser-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		94DB98A419DE4571009404ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestBrowser.app/TestBrowser";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libWebBrowser/libWebBrowser-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "libWebBrowserTests/libWebBrowserTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		94DB98A519DE4571009404ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestBrowser.app/TestBrowser";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libWebBrowser/libWebBrowser-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "libWebBrowserTests/libWebBrowserTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		FAC9B27E16F27BF800E37710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAC9B27F16F27BF800E37710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC9B28116F27BF800E37710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestBrowser/TestBrowser-Prefix.pch";
+				INFOPLIST_FILE = "TestBrowser/TestBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAC9B28216F27BF800E37710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestBrowser/TestBrowser-Prefix.pch";
+				INFOPLIST_FILE = "TestBrowser/TestBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94DB98A619DE4571009404ED /* Build configuration list for PBXNativeTarget "libWebBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94DB98A219DE4571009404ED /* Debug */,
+				94DB98A319DE4571009404ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94DB98A719DE4571009404ED /* Build configuration list for PBXNativeTarget "libWebBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94DB98A419DE4571009404ED /* Debug */,
+				94DB98A519DE4571009404ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAC9B25516F27BF800E37710 /* Build configuration list for PBXProject "TestBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC9B27E16F27BF800E37710 /* Debug */,
+				FAC9B27F16F27BF800E37710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC9B28016F27BF800E37710 /* Build configuration list for PBXNativeTarget "TestBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC9B28116F27BF800E37710 /* Debug */,
+				FAC9B28216F27BF800E37710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAF75E9418A17A77007B317D /* BrowserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAF75E9518A17A77007B317D /* BrowserModel.xcdatamodel */,
+			);
+			currentVersion = FAF75E9518A17A77007B317D /* BrowserModel.xcdatamodel */;
+			path = BrowserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FAF75ED418A17BFD007B317D /* BrowserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAF75ED518A17BFD007B317D /* BrowserModel.xcdatamodel */,
+			);
+			currentVersion = FAF75ED518A17BFD007B317D /* BrowserModel.xcdatamodel */;
+			path = BrowserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAC9B25216F27BF800E37710 /* Project object */;
+}

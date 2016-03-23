@@ -1,0 +1,40 @@
+//
+//  StaticLibraryTarget.xcconfig
+//
+//  These are static library target settings for libgtest.a. It
+//  is set in the "Based On:" dropdown in the "Target" info dialog.
+//  This file is based on the Xcode Configuration files in:
+//  http://code.google.com/p/google-toolbox-for-mac/
+// 
+
+#include "iOSAppGeneric.xcconfig"
+
+LIBRARY_SEARCH_PATHS="$PMSROOT/ios/lib"
+
+GCC_PREPROCESSOR_DEFINITIONS=$(GENERAL_GCC_PREPROCESSOR_DEFINITIONS)
+
+
+// Define the DEBUG macro in all debug builds
+OTHER_CFLAGS =$(GENERAL_OTHER_CFLAGS) -DPOSIX -DNDEBUG=1
+
+
+// Static libs can be included in bundles so make them position independent
+GCC_DYNAMIC_NO_PIC = NO
+
+
+// Optimize for space and size (Apple recommendation)
+GCC_OPTIMIZATION_LEVEL = 3
+
+// Deploment postprocessing is what triggers Xcode to strip
+DEPLOYMENT_POSTPROCESSING = NO
+
+// No symbols
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+
+// Dead code strip does not affect ObjC code but can help for C
+//DEAD_CODE_STRIPPING = NO
+RETAIN_RAW_BINARIES = YES
+//PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES
+// NDEBUG is used by things like assert.h, so define it for general compat.
+// ASSERT going away in release tends to create unused vars.
+//OTHER_CFLAGS = $(OTHER_CFLAGS) -DNDEBUG=1 -Wno-unused-variable
