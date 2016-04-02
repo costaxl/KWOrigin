@@ -131,6 +131,9 @@
 		94DB996119DE7E58009404ED /* i-DocShare_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 94DB995E19DE7E58009404ED /* i-DocShare_57.png */; };
 		94DB996219DE7E58009404ED /* i-DocShare_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 94DB995F19DE7E58009404ED /* i-DocShare_72.png */; };
 		94DB996319DE7E58009404ED /* i-DocShare_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 94DB996019DE7E58009404ED /* i-DocShare_76.png */; };
+		94DD89291C8EB01B00B02D45 /* iOSAppDebugTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 94DD89261C8EB01B00B02D45 /* iOSAppDebugTarget.xcconfig */; };
+		94DD892A1C8EB01B00B02D45 /* iOSAppGeneric.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 94DD89271C8EB01B00B02D45 /* iOSAppGeneric.xcconfig */; };
+		94DD892B1C8EB01B00B02D45 /* iOSAppReleaseTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 94DD89281C8EB01B00B02D45 /* iOSAppReleaseTarget.xcconfig */; };
 		94DD894A1C8ECE0B00B02D45 /* libPMPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD89491C8ECE0B00B02D45 /* libPMPlayerSDK.a */; };
 		94DD896E1C8EE25C00B02D45 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD896D1C8EE25C00B02D45 /* libz.tbd */; };
 		94FE2055199C740700D17BC8 /* FIleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FE2052199C740700D17BC8 /* FIleListViewController.m */; };
@@ -1438,7 +1441,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0420;
 				TargetAttributes = {
 					94CC4806154135C400502D71 = {
 						DevelopmentTeam = FPC9C8KP3J;
@@ -1672,6 +1675,7 @@
 				E17F34CF1606FC1D00DAE5DF /* 198-card-spades.png in Resources */,
 				94DB994F19DE54D2009404ED /* MainWindow.xib in Resources */,
 				94DB993E19DE54D2009404ED /* bookmark.png in Resources */,
+				94DD89291C8EB01B00B02D45 /* iOSAppDebugTarget.xcconfig in Resources */,
 				E17F34D01606FC1D00DAE5DF /* 199-card-hearts.png in Resources */,
 				E17F34D11606FC1D00DAE5DF /* 20-gear2.png in Resources */,
 				E17F34D21606FC1D00DAE5DF /* 200-card-clubs.png in Resources */,
@@ -1709,6 +1713,7 @@
 				E17F34E91606FC1D00DAE5DF /* 43-film-roll.png in Resources */,
 				E17F34EA1606FC1D00DAE5DF /* 44-shoebox.png in Resources */,
 				E17F34EB1606FC1D00DAE5DF /* 45-movie-1.png in Resources */,
+				94DD892B1C8EB01B00B02D45 /* iOSAppReleaseTarget.xcconfig in Resources */,
 				E17F34EC1606FC1D00DAE5DF /* 46-movie-2.png in Resources */,
 				E17F34ED1606FC1D00DAE5DF /* 47-fuel.png in Resources */,
 				E17F34EE1606FC1D00DAE5DF /* 48-fork-and-knife.png in Resources */,
@@ -1727,6 +1732,7 @@
 				E17F34F81606FC1D00DAE5DF /* 58-bookmark.png in Resources */,
 				E17F34F91606FC1D00DAE5DF /* 59-flag.png in Resources */,
 				E17F34FA1606FC1D00DAE5DF /* 60-signpost.png in Resources */,
+				94DD892A1C8EB01B00B02D45 /* iOSAppGeneric.xcconfig in Resources */,
 				E17F34FB1606FC1D00DAE5DF /* 61-brightness.png in Resources */,
 				E17F34FC1606FC1D00DAE5DF /* 62-contrast.png in Resources */,
 				E17F34FD1606FC1D00DAE5DF /* 63-runner.png in Resources */,
@@ -1992,7 +1998,6 @@
 			baseConfigurationReference = 94DD89261C8EB01B00B02D45 /* iOSAppDebugTarget.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
