@@ -255,12 +255,12 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         if (result==0)
         {
             ([GUIModelService defaultModelService]).m_AppSetting.m_ScreenShareServerRecord = self.m_SSServerRecord;
-            ErrMsg = @"Login successfully!!!";
+            ErrMsg = @"Login successful";
             
         }
         else
         {
-            ErrMsg = @"Login failed!!!";
+            ErrMsg = @"Login failed";
         }
     }while(false);
     
