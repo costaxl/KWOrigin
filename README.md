@@ -2,7 +2,7 @@
 #Installation instructions
 
 * Clone this repo from Github:
-git clone https://github.com/OptimisticLock/KLIK/tree/master
+git clone https://github.com/OptimisticLock/KLIK
 
 * Download this file (too big for Github) to iDocShare_src/lib/libPMPlayerSDK.a
 https://www.dropbox.com/s/5m0ewz39nde8wl3/libPMPlayerSDK.a?dl=0
