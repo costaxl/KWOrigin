@@ -321,8 +321,13 @@
             {
                 ALAssetRepresentation *defaultRepresentation = [asset defaultRepresentation];
                 NSString *uti = [defaultRepresentation UTI];
+                if(![[asset valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypePhoto])
+                    continue;
                 NSURL *URL = [[asset valueForProperty:ALAssetPropertyURLs] valueForKey:uti];
                 NSString *title = [NSString stringWithFormat:@"%@ %i", NSLocalizedString(@"Video", nil), [assetItems count]+1];
+                //NSLog(@"asset url:%@, uti:%@", URL, uti);
+                if (URL==nil)
+                    continue;
                 AssetBrowserItem *item = [[self newAssetBrowserItem:URL title:title] autorelease];
                 if (m_bGrouping)
                 {
