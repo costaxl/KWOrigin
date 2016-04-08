@@ -129,7 +129,7 @@
         if (!self.m_SSServerRecord)
         {
             
-            ErrMsg = @"Select a device to login first!!!";
+            ErrMsg = @"Select a device to login first";
             
             UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:ErrMsg
                                                                      delegate:nil

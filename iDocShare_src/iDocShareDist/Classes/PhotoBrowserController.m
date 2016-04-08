@@ -600,7 +600,7 @@
     BelongingsRecordApple* Candidate = ([GUIModelService defaultModelService]).m_AppSetting.m_FileServerRecord;
     if (!Candidate)
     {
-        NSString *ErrMsg = @"Please set the information of FileShare server first!!!";
+        NSString *ErrMsg = @"Please set the information of FileShare server first";
         UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:ErrMsg
                                                                  delegate:nil
                                                         cancelButtonTitle:@"Cancel"

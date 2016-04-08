@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e99401c-1b7f-4488-97a4-187412f4a227" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/AssetBrowser/AssetBrowserItem.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/AssetBrowser/AssetBrowserItem.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/AssetBrowser/AssetBrowserSource.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/AssetBrowser/AssetBrowserSource.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/MainWindow-iPad.xib" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/MainWindow-iPad.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/MainWindow.xib" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/MainWindow.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/unable_to_connect.html" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/unable_to_connect.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/FileListViewController.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/FileListViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/FileShareBrowserViewController.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/FileShareBrowserViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/GUIAPPDelegate.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/GUIAPPDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/LoginPopupViewController.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/LoginPopupViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/SettingPageViewController.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/SettingPageViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/iDocShare.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/iDocShare.xcodeproj/project.pbxproj" />
-    </list>
+    <list default="true" id="0e99401c-1b7f-4488-97a4-187412f4a227" name="Default" comment="" />
     <ignored path="KLIK.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -187,12 +175,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460079902633</updated>
-      <workItem from="1460079906074" duration="3348000" />
+      <workItem from="1460079906074" duration="3433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3348000" />
+    <option name="totallyTimeSpent" value="3433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />

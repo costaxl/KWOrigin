@@ -244,7 +244,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         if (!self.m_SSServerRecord)
         {
             
-            ErrMsg = @"Select a device to login first!!!";
+            ErrMsg = @"Select a device to login first";
             break;
         }
         // login server
@@ -329,7 +329,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
 
     [[GUIModelService defaultModelService] SaveSetting];
     
-    NSString *Msg = @"Setting Saved!!!";
+    NSString *Msg = @"Settings Saved";
 
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:Msg
                                                              delegate:nil
@@ -394,7 +394,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         if (!self.m_FileServerRecord)
         {
             
-            ErrMsg = @"Select a FileShare server first!!!";
+            ErrMsg = @"Select a FileShare server first";
             break;
         }
         // login server
@@ -407,7 +407,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         switch (noerr)
         {
             case kPMSError_NoError:
-                ErrMsg = @"Connect to FileShare server successfully!!!";
+                ErrMsg = @"Connect to FileShare server successfully";
                 break;
             case kPMSError_AuthenticationFailed:
                 ErrMsg = @"Error: AuthenticationFailed";
