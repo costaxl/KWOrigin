@@ -174,7 +174,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         {
             // show alert
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error - compatibility"
-                                                            message:@"New Version of firmware is avalible. Please update to the newest version or connect to another server."
+                                                            message:@"The version of software is not compatible with the server. Please upgrade Server's firmware! Or select other server"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
@@ -255,12 +255,12 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         if (result==0)
         {
             ([GUIModelService defaultModelService]).m_AppSetting.m_ScreenShareServerRecord = self.m_SSServerRecord;
-            ErrMsg = @"Login successfully!!!";
+            ErrMsg = @"Login successful";
             
         }
         else
         {
-            ErrMsg = @"Login failed!!!";
+            ErrMsg = @"Login failed";
         }
     }while(false);
     

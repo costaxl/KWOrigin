@@ -249,7 +249,7 @@ static PMFileTransporterApple *g_fileTransporter = NULL;
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     if (![self isFileServerLinked]) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Login to Dropbox", @"DropboxBrowser: Alert Title") message:[NSString stringWithFormat:NSLocalizedString(@"%@ is not linked to your Dropbox. Would you like to login now and allow access?", @"DropboxBrowser: Alert Message. 'APP NAME' is not linked to Dropbox..."), [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]] delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"DropboxBrowser: Alert Button") otherButtonTitles:NSLocalizedString(@"Login", @"DropboxBrowser: Alert Button"), nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Login to FileServer", @"FileServerBrowser: Alert Title") message:[NSString stringWithFormat:NSLocalizedString(@"%@ is not login to your FileServer. Would you like to login now and allow access?", @"FileServerBrowser: Alert Message. 'APP NAME' is not linked to FileServer..."), [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]] delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"FileServerBrowser: Alert Button") otherButtonTitles:NSLocalizedString(@"Login", @"FileServerBrowser: Alert Button"), nil];
         alertView.tag = kDBSignInAlertViewTag;
         [alertView show];
     }
@@ -260,7 +260,7 @@ static PMFileTransporterApple *g_fileTransporter = NULL;
 }
 
 - (void)logoutOfFileServer {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Logout of Dropbox", @"DropboxBrowser: Alert Title") message:[NSString stringWithFormat:NSLocalizedString(@"Are you sure you want to logout of Dropbox and revoke Dropbox access for %@?", @"DropboxBrowser: Alert Message. ...revoke Dropbox access for 'APP NAME'"), [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]] delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"DropboxBrowser: Alert Button") otherButtonTitles:NSLocalizedString(@"Logout", @"FileshareBrowser: Alert Button"), nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Logout of FileServer", @"FileServerBrowser: Alert Title") message:[NSString stringWithFormat:NSLocalizedString(@"Are you sure you want to logout of FileServer ?", @"FileServerBrowser: Alert Message. ...logout FileServer for 'APP NAME'"), [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]] delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"FileServerBrowser: Alert Button") otherButtonTitles:NSLocalizedString(@"Logout", @"FileServerBrowser: Alert Button"), nil];
     alertView.tag = kDBSignOutAlertViewTag;
     [alertView show];
 }

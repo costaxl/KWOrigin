@@ -480,7 +480,7 @@
 		94C9F7EC19DC0DB50068409D /* GUIModelService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUIModelService.m; sourceTree = "<group>"; };
 		94C9F7EE19DC109A0068409D /* AppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSetting.h; sourceTree = "<group>"; };
 		94C9F7EF19DC109A0068409D /* AppSetting.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppSetting.mm; sourceTree = "<group>"; };
-		94CC4882154135C400502D71 /* iDocShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDocShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CC4882154135C400502D71 /* KLIK Knkt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KLIK Knkt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D4258A1C632C2900D1CB3A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		94DB983B19DCED05009404ED /* AccessDropbox2_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AccessDropbox2_25.png; sourceTree = "<group>"; };
 		94DB983C19DCED05009404ED /* AccessDropbox2_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AccessDropbox2_50.png; sourceTree = "<group>"; };
@@ -872,7 +872,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94CC4882154135C400502D71 /* iDocShare.app */,
+				94CC4882154135C400502D71 /* KLIK Knkt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1432,7 +1432,7 @@
 			);
 			name = iDocShare;
 			productName = MobileVLC;
-			productReference = 94CC4882154135C400502D71 /* iDocShare.app */;
+			productReference = 94CC4882154135C400502D71 /* KLIK Knkt.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1444,7 +1444,7 @@
 				LastUpgradeCheck = 0420;
 				TargetAttributes = {
 					94CC4806154135C400502D71 = {
-						DevelopmentTeam = 35RUYBP42P;
+						DevelopmentTeam = FPC9C8KP3J;
 					};
 				};
 			};
@@ -1877,7 +1877,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1909,11 +1909,14 @@
 				);
 				INFOPLIST_FILE = "PMBroker test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tywang/project/pc2tv_tpe/ios/lib/ffmpeg,
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.aevermax.iDocShare;
-				PRODUCT_NAME = iDocShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.optimisticlock.klik;
+				PRODUCT_NAME = "KLIK Knkt";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "./**";
 			};
@@ -1941,11 +1944,14 @@
 				);
 				INFOPLIST_FILE = "PMBroker test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tywang/project/pc2tv_tpe/ios/lib/ffmpeg,
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.aevermax.iDocShare;
-				PRODUCT_NAME = iDocShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.optimisticlock.klik;
+				PRODUCT_NAME = "KLIK Knkt";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "./**";
 				VALIDATE_PRODUCT = YES;
@@ -1973,11 +1979,14 @@
 				);
 				INFOPLIST_FILE = "PMBroker test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tywang/project/pc2tv_tpe/ios/lib/ffmpeg,
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.aevermax.iDocShare;
-				PRODUCT_NAME = iDocShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.optimisticlock.klik;
+				PRODUCT_NAME = "KLIK Knkt";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "./**";
 				VALIDATE_PRODUCT = YES;
@@ -1993,7 +2002,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2009,7 +2018,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;

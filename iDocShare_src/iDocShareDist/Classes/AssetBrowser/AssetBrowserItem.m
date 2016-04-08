@@ -118,7 +118,7 @@ typedef NSInteger AssetBrowserItemSource;
         }
         
         CFRelease(preferredUTI);
-        //NSLog(@"scheme: %@", [URL scheme]);
+        NSLog(@"scheme: %@", [URL scheme]);
         if ([[URL scheme] compare:@"file"] == NSOrderedSame)
         {
             m_Source = AssetBrowserItemSource_File;
