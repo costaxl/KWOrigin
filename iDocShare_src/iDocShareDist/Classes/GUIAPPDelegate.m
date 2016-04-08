@@ -152,12 +152,12 @@ static GUIAPPDelegate* defaultApp=nil;
     //keep recorder in setting
     if (result==0)
     {
-        ErrMsg = @"Login Successful.";
+        ErrMsg = @"Login Successful";
         
     }
     else
     {
-        ErrMsg = @"Login Failed.";
+        ErrMsg = @"Login Failed";
     }
 
 }

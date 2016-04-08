@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:iDocShare.xcodeproj">
+      location = "self:/Users/irinaapex/irina/KLIK/iDocShare_src/iDocShareDist/KLIK.xcodeproj">
    </FileRef>
 </Workspace>
