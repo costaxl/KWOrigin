@@ -1417,9 +1417,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94CC4806154135C400502D71 /* iDocShare */ = {
+		94CC4806154135C400502D71 /* KLIK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94CC487E154135C400502D71 /* Build configuration list for PBXNativeTarget "iDocShare" */;
+			buildConfigurationList = 94CC487E154135C400502D71 /* Build configuration list for PBXNativeTarget "KLIK" */;
 			buildPhases = (
 				94CC4807154135C400502D71 /* Resources */,
 				94CC4849154135C400502D71 /* Sources */,
@@ -1430,7 +1430,7 @@
 			dependencies = (
 				94913BF819ADB5F5008A7709 /* PBXTargetDependency */,
 			);
-			name = iDocShare;
+			name = KLIK;
 			productName = MobileVLC;
 			productReference = 94CC4882154135C400502D71 /* KLIK Knkt.app */;
 			productType = "com.apple.product-type.application";
@@ -1472,7 +1472,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				94CC4806154135C400502D71 /* iDocShare */,
+				94CC4806154135C400502D71 /* KLIK */,
 			);
 		};
 /* End PBXProject section */
@@ -2020,7 +2020,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94CC487E154135C400502D71 /* Build configuration list for PBXNativeTarget "iDocShare" */ = {
+		94CC487E154135C400502D71 /* Build configuration list for PBXNativeTarget "KLIK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94CC487F154135C400502D71 /* Debug */,
