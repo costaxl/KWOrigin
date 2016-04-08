@@ -174,7 +174,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         {
             // show alert
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error - compatibility"
-                                                            message:@"The version of software is not compatible with the server. Please upgrade Server's firmware! Or select other server"
+                                                            message:@"New Version of firmware is avalible. Please update to the newest version or connect to another server."
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];

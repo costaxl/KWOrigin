@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e99401c-1b7f-4488-97a4-187412f4a227" name="Default" comment="" />
+    <list default="true" id="0e99401c-1b7f-4488-97a4-187412f4a227" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/AssetBrowser/AssetBrowserItem.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/AssetBrowser/AssetBrowserItem.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/AssetBrowser/AssetBrowserSource.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/AssetBrowser/AssetBrowserSource.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/MainWindow-iPad.xib" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/MainWindow-iPad.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/MainWindow.xib" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/MainWindow.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/unable_to_connect.html" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/Browser Resources/unable_to_connect.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/FileListViewController.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/FileListViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/FileShareBrowserViewController.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/FileShareBrowserViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/GUIAPPDelegate.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/GUIAPPDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/LoginPopupViewController.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/LoginPopupViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/SettingPageViewController.m" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/Classes/SettingPageViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/iDocShare.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/iDocShare_src/iDocShareDist/iDocShare.xcodeproj/project.pbxproj" />
+    </list>
     <ignored path="KLIK.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -175,21 +187,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460079902633</updated>
-      <workItem from="1460079906074" duration="1998000" />
+      <workItem from="1460079906074" duration="3348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1998000" />
+    <option name="totallyTimeSpent" value="3348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />

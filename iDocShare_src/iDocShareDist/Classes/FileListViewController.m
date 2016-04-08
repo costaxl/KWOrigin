@@ -584,11 +584,14 @@ static NSString* GetFullFilePath(NSString* FileName)
     NSString* alterMessage=nil;
     if (ActionResult == kAction_Success)
     {
-        alterMessage = @"Login Successful";
+        alterMessage = @"Login Successful.";
     }
     else if (ActionResult == kAction_Failed)
     {
-        alterMessage = @"Login Failed";
+        if (ErrorCode == kPMSError_PeerNotAccept_NotCompatible)
+            alterMessage =  @"New Version of firmware is avalible. Please update to the newest version or connect to another server.";
+        else
+            alterMessage = @"Login Failed.";
     }
     if (alterMessage)
     {
