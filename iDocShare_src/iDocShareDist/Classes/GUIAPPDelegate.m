@@ -152,12 +152,12 @@ static GUIAPPDelegate* defaultApp=nil;
     //keep recorder in setting
     if (result==0)
     {
-        ErrMsg = @"Login Successful";
+        ErrMsg = @"Login Successful.";
         
     }
     else
     {
-        ErrMsg = @"Login Failed";
+        ErrMsg = @"Login Failed.";
     }
 
 }
@@ -213,8 +213,8 @@ static GUIAPPDelegate* defaultApp=nil;
     if (NewState == kNSSServer_ScreenMirroring)
     {
         // Screen has mirrored
-        UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
-        if (UIDeviceOrientationIsLandscape(deviceOrientation))
+        UIInterfaceOrientation deviceOrientation = [UIApplication sharedApplication].statusBarOrientation;
+        if (UIInterfaceOrientationIsLandscape(deviceOrientation))
             m_bLandscape = true;
         else
             m_bLandscape = false;
@@ -286,25 +286,38 @@ static GUIAPPDelegate* defaultApp=nil;
 
 - (void)orientationChanged:(NSNotification *)notification
 {
-    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
-    if (UIDeviceOrientationIsLandscape(deviceOrientation) || UIDeviceOrientationIsPortrait(deviceOrientation))
+    UIInterfaceOrientation deviceOrientation = [UIApplication sharedApplication].statusBarOrientation;
+    if (UIInterfaceOrientationIsLandscape(deviceOrientation) || UIInterfaceOrientationIsPortrait(deviceOrientation))
     {
-        if (UIDeviceOrientationIsLandscape(deviceOrientation) && m_bLandscape)
+        if (UIInterfaceOrientationIsLandscape(deviceOrientation) && m_bLandscape)
             return;
-        if (UIDeviceOrientationIsPortrait(deviceOrientation) && !m_bLandscape)
+        if (UIInterfaceOrientationIsPortrait(deviceOrientation) && !m_bLandscape)
             return;
         
         NSLog(@"orientation changed");
         CGSize imageSize = CGSizeZero;
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+        {
+            imageSize = [UIScreen mainScreen].bounds.size;
+            
+        }
+        else
+        {
+            if (UIInterfaceOrientationIsPortrait(deviceOrientation)) {
+                imageSize = [UIScreen mainScreen].bounds.size;
+            } else {
+                imageSize = CGSizeMake([UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
+            }
+            
+        }
+        
         
         if (UIInterfaceOrientationIsPortrait(deviceOrientation))
         {
-            imageSize = [UIScreen mainScreen].bounds.size;
             m_bLandscape = false;
         }
-        else if (UIDeviceOrientationIsLandscape(deviceOrientation))
+        else
         {
-            imageSize = CGSizeMake([UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
             m_bLandscape = true;
         }
 
