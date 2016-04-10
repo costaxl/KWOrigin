@@ -112,11 +112,14 @@ CG_INLINE BOOL isIPhone4()
         else
             NSAssert(NO, @"Invalid origin provided to ActionSheetPicker ( %@ )", origin);
 
-        UIBarButtonItem *sysDoneButton = [self createButtonWithType:UIBarButtonSystemItemDone target:self
-                                                             action:@selector(actionPickerDone:)];
+        // Irina
+        UIBarButtonItem *sysDoneButton = [self createButtonWithType:UIButtonTypeCustom target:self
+            action:@selector(actionPickerDone:)];
+        
+        sysDoneButton.title=@"Connect";
 
         UIBarButtonItem *sysCancelButton = [self createButtonWithType:UIBarButtonSystemItemCancel target:self
-                                                               action:@selector(actionPickerCancel:)];
+            action:@selector(actionPickerCancel:)];
 
         [self setCancelBarButtonItem:sysCancelButton];
         [self setDoneBarButtonItem:sysDoneButton];

@@ -119,6 +119,8 @@
     }
 
     [ActionSheetStringPicker showPickerWithTitle:@"Select a KLIK" rows:deviceNames initialSelection:self.selectedIndex doneBlock:done cancelBlock:cancel origin:self.view];
+    
+ //   [setDoneButton:(UIBarButtonItem *)button] iii
 
 }
 - (IBAction)loginServer:(id)sender
