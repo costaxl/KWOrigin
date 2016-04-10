@@ -224,7 +224,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         }
     }
     
-    [ActionSheetStringPicker showPickerWithTitle:@"Select a Device" rows:deviceNames initialSelection:self.selectedSSIndex doneBlock:done cancelBlock:cancel origin:sender];
+    [ActionSheetStringPicker showPickerWithTitle:@"Select a KLIK" rows:deviceNames initialSelection:self.selectedSSIndex doneBlock:done cancelBlock:cancel origin:sender];
 }
 
 - (IBAction)loginSSServer:(id)sender
@@ -244,7 +244,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
         if (!self.m_SSServerRecord)
         {
             
-            ErrMsg = @"Select a device to login first";
+            ErrMsg = @"Select a KLIK to login first";
             break;
         }
         // login server

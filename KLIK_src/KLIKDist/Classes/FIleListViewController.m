@@ -287,7 +287,12 @@ static NSString* GetFullFilePath(NSString* FileName)
         m_CurrentSortButton = m_SortByTypeButton;
     else
         m_CurrentSortButton = m_SortByAButton;
-    ButtonArray = [[NSArray alloc] initWithObjects:m_CurrentSortButton, editButton, m_PCAccessButton, m_DropboxAccessButton, nil];
+    
+    // Irina
+   // ButtonArray = [[NSArray alloc] initWithObjects:m_CurrentSortButton, editButton, m_PCAccessButton, m_DropboxAccessButton, nil];
+
+    ButtonArray = [[NSArray alloc] initWithObjects:editButton, m_DropboxAccessButton, nil];
+    
     self.navigationItem.RightBarButtonItems = ButtonArray;
 
     [self updateButtonsToMatchTableState];
@@ -423,7 +428,11 @@ static NSString* GetFullFilePath(NSString* FileName)
         //Show the edit button
         self.navigationItem.leftItemsSupplementBackButton = YES;
         NSArray* ButtonArray;
-        ButtonArray = [[NSArray alloc] initWithObjects:m_CurrentSortButton, editButton, m_PCAccessButton, m_DropboxAccessButton, nil];
+        
+        // Irina
+   //     ButtonArray = [[NSArray alloc] initWithObjects:m_CurrentSortButton, editButton, m_PCAccessButton, m_DropboxAccessButton, nil];
+        
+        ButtonArray = [[NSArray alloc] initWithObjects: editButton, m_DropboxAccessButton, nil];
         self.navigationItem.RightBarButtonItems = ButtonArray;
 
         //self.navigationItem.rightBarButtonItem = editButton;
@@ -596,13 +605,22 @@ static NSString* GetFullFilePath(NSString* FileName)
     if (alterMessage)
     {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil	message:alterMessage delegate:nil
-                                                  cancelButtonTitle:@"OK"
+                                                  cancelButtonTitle:nil
                                                   otherButtonTitles:nil];
         [alertView show];
+        
+        // Irina alert times out in 2 min
+        [self performSelector:@selector(dismiss:) withObject:alertView afterDelay:2];
+        
         [alertView release];
     }
     
 
+}
+
+// Irina
+-(void)dismiss:(UIAlertView*)x{
+    [x dismissWithClickedButtonIndex:-1 animated:YES];
 }
 
 #pragma mark - Cloud action
@@ -724,7 +742,12 @@ static NSString* GetFullFilePath(NSString* FileName)
     m_SortingType = kSortingType_ByAlphabet;
     m_CurrentSortButton = m_SortByTypeButton;
     
-    ButtonArray = [[NSArray alloc] initWithObjects:m_CurrentSortButton, editButton, m_PCAccessButton, m_DropboxAccessButton, nil];
+    // Irina
+    //  ButtonArray = [[NSArray alloc] initWithObjects:m_CurrentSortButton, editButton, m_PCAccessButton, m_DropboxAccessButton, nil];
+
+    ButtonArray = [[NSArray alloc] initWithObjects: editButton, m_DropboxAccessButton, nil];
+
+    
     self.navigationItem.RightBarButtonItems = ButtonArray;
     NSArray *browserItems = [self browserItemsInDirectory:self.m_DocumentPath];
     [self updateBrowserItemsAndSignalDelegate:browserItems];
@@ -735,7 +758,8 @@ static NSString* GetFullFilePath(NSString* FileName)
     m_SortingType = kSortingType_ByType;
     m_CurrentSortButton = m_SortByAButton;
     
-    ButtonArray = [[NSArray alloc] initWithObjects:m_CurrentSortButton, editButton, m_PCAccessButton, m_DropboxAccessButton, nil];
+    // Irina
+    ButtonArray = [[NSArray alloc] initWithObjects: editButton, m_DropboxAccessButton, nil];
     self.navigationItem.RightBarButtonItems = ButtonArray;
     NSArray *browserItems = [self browserItemsInDirectory:self.m_DocumentPath];
     [self updateBrowserItemsAndSignalDelegate:browserItems];

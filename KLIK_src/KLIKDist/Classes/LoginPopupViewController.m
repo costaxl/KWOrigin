@@ -118,7 +118,7 @@
         }
     }
 
-    [ActionSheetStringPicker showPickerWithTitle:@"Select a Device" rows:deviceNames initialSelection:self.selectedIndex doneBlock:done cancelBlock:cancel origin:self.view];
+    [ActionSheetStringPicker showPickerWithTitle:@"Select a KLIK" rows:deviceNames initialSelection:self.selectedIndex doneBlock:done cancelBlock:cancel origin:self.view];
 
 }
 - (IBAction)loginServer:(id)sender
@@ -129,7 +129,7 @@
         if (!self.m_SSServerRecord)
         {
             
-            ErrMsg = @"Select a device to login first";
+            ErrMsg = @"Select a KLIK to login first";
             
             UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:ErrMsg
                                                                      delegate:nil
