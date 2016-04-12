@@ -308,7 +308,7 @@
         <scene sceneID="gxj-q7-ndy">
             <objects>
                 <navigationController definesPresentationContext="YES" id="lin-Ob-WoT" userLabel="Nav - Open Doc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Document" image="tabDoc_25.png" id="fZ4-DP-h1E"/>
+                    <tabBarItem key="tabBarItem" title="Document" image="tabDoc2_25.png" id="fZ4-DP-h1E" colorLabel="IBBuiltInLabel-Green"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R9y-Ju-i8Q">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -979,7 +979,7 @@
         <image name="20-gear2.png" width="26" height="28"/>
         <image name="69-display.png" width="22" height="20"/>
         <image name="PlayControl_Play_50.png" width="50" height="50"/>
-        <image name="tabDoc_25.png" width="25" height="25"/>
+        <image name="tabDoc2_25.png" width="25" height="25"/>
         <image name="tabPhoto_25.png" width="25" height="25"/>
         <image name="tabSetting_25.png" width="25" height="25"/>
         <image name="tabWeb_25.png" width="25" height="25"/>
