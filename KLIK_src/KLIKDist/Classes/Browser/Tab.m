@@ -223,7 +223,7 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     [[self progressBar] setHidden:YES];
-    if ([[connection currentRequest] URL] != NULL) {
+    if ([[connection currentRequest] URL] == NULL) {
         [viewController cannotConnect:webView];
     } else {
     NSString *urlAddress = @"";
