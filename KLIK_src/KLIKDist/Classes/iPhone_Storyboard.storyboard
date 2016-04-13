@@ -232,6 +232,11 @@
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.54901960780000003" green="0.70588235290000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="r0u-rr-tLg" kind="relationship" relationship="viewControllers" id="vs4-Hj-gct"/>
@@ -308,7 +313,13 @@
         <scene sceneID="YoX-HI-lOS">
             <objects>
                 <navigationController definesPresentationContext="YES" id="r0u-rr-tLg" userLabel="Nav - Open Doc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Document" image="tabDoc_25.png" id="w75-P4-kdd"/>
+                    <tabBarItem key="tabBarItem" title="Document" image="tabDoc_25.png" id="w75-P4-kdd">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.54901960780000003" green="0.70588235290000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zub-wS-71W">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
