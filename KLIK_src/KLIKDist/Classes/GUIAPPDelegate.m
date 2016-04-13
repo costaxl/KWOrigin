@@ -509,7 +509,7 @@ static GUIAPPDelegate* defaultApp=nil;
 -(void) alertConnectionLost
 {
     /* Display the error. */
-    NSString* alterMessage= @"Lost connection";;
+    NSString* alterMessage= @"Please reconnect";;
     if (alterMessage)
     {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil	message:alterMessage delegate:nil
