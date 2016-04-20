@@ -685,7 +685,7 @@
         <scene sceneID="JkS-R6-42y">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xow-JQ-zc1" userLabel="Nav - Browse Web" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Web" image="tabWeb_25.png" id="Dox-Wr-TAz"/>
+                    <tabBarItem key="tabBarItem" title="Browser" image="tabWeb_25.png" id="Dox-Wr-TAz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W9B-eX-5bK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -727,8 +727,8 @@
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex :select a FileShare server" minimumFontSize="17" clearButtonMode="whileEditing" id="0TZ-tI-REh">
-                                                    <rect key="frame" x="120" y="7" width="520" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="120" y="7" width="640" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
@@ -747,10 +747,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="L8X-I4-O1c">
-                                                    <rect key="frame" x="120" y="7" width="520" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="120" y="7" width="640" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                                                     <connections>
                                                         <action selector="returnButPressed:" destination="fUl-e9-afa" eventType="editingDidEndOnExit" id="45Q-kT-y9c"/>
                                                         <action selector="returnButPressed:" destination="AI5-ZC-yc4" eventType="editingDidEndOnExit" id="PZC-1e-eKB"/>
@@ -805,8 +805,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex :select a ScreenShare server" minimumFontSize="17" clearButtonMode="whileEditing" id="olO-OG-Wr2">
-                                                    <rect key="frame" x="120" y="7" width="520" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="120" y="7" width="640" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
@@ -832,10 +832,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="sqx-js-if4">
-                                                    <rect key="frame" x="120" y="7" width="520" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="120" y="7" width="640" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                                                     <connections>
                                                         <action selector="returnButPressed:" destination="fUl-e9-afa" eventType="editingDidEndOnExit" id="mLt-13-uBw"/>
                                                         <action selector="returnButPressed:" destination="AI5-ZC-yc4" eventType="editingDidEndOnExit" id="ttb-5j-NHs"/>
@@ -884,7 +884,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Dropbox status" id="pR2-xW-kcP" userLabel="Table View Section - Dropbox Status">
+                            <tableViewSection headerTitle="Cloud" id="pR2-xW-kcP" userLabel="Table View Section - Dropbox Status">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="NRJ-kg-nfn">
                                         <rect key="frame" x="0.0" y="394" width="768" height="44"/>
@@ -895,11 +895,18 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" on="YES" id="njl-AE-Jba" userLabel="dropbox login switch">
                                                     <rect key="frame" x="711" y="7" width="51" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <action selector="DropBoxServerConnection:" destination="AI5-ZC-yc4" eventType="valueChanged" id="vXL-zc-jYD"/>
                                                     </connections>
                                                 </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dropbox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Fze-mx-vkR">
+                                                    <rect key="frame" x="27" y="11" width="102" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1073,6 +1080,6 @@
         <image name="tabWeb_25.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="31D-Z8-cyj"/>
+        <segue reference="MJW-mq-EUx"/>
     </inferredMetricsTieBreakers>
 </document>

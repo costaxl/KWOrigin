@@ -41,6 +41,9 @@
 -(void*) GetHandle;
 -(id) GetFeature:(NSString*)FeatureName;
 -(bool) GetServiceProvider:(NSString*)ServiceName Provider:(void**) ppProvider;
+
+- (bool)GetProperty:(NSString*)name value:(NSObject**)Value;
+
 @end
 
 

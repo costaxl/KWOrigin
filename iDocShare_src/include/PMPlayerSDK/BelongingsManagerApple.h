@@ -5,6 +5,9 @@
 #import <Foundation/Foundation.h>
 #include "BelongingsManagerCommonType.h"
 
+#define BR_VERSION_GREATER_THAN(record, v_major, v_minor)  ((record.m_Version > (((v_major&0xFFFF)<<16)|(v_minor&0xFFFF))?true:false))
+#define BR_VERSION_GREATER_THAN_EQUAL_TO(record, v_major, v_minor)  ((record.m_Version >= (((v_major&0xFFFF)<<16)|(v_minor&0xFFFF))?true:false))
+#define BR_VERSION_LESS_THAN(record, v_major, v_minor)  ((record.m_Version < (((v_major&0xFFFF)<<16)|(v_minor&0xFFFF))?true:false))
 
 #if defined(IOS)
 @interface BelongingsRecordApple : NSObject <NSCoding>

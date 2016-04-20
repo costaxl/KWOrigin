@@ -320,6 +320,14 @@
 }
 - (void)SetOutContextInMainThread
 {
+    
+    if (m_pWorkingJob)
+    {
+        // remove last working job
+        [m_pWorkingJob dealloc];
+        m_pWorkingJob = nil;
+    }
+    
     self.Status = kNSSServer_Out;
     if (m_CSPBC)
     {

@@ -34,6 +34,8 @@
 #define NSS_CMD_Transfer_ARG_NextName "NextName"
 #define NSS_CMD_Transfer_ARG_FeatureID PM_PBC_CMD_STARTFEATURE_ARG_FEATUREID
 #define NSS_CMD_Transfer_ARG_Force "Force"
+#define NSS_CMD_Transfer_ARG_EnableUSBBackChannel "EnableUSBBackChannel"
+#define NSS_CMD_Transfer_ARG_EnableRemoteCursor "EnableRemoteCursor"
 
 
 #define NSS_CMD_StopFeature "NSS_CMD_StopFeature"
@@ -50,6 +52,11 @@
 #define NSS_CMD_ResumeFeature_ARG_TargetJoiner PM_PBC_CMD_RESUMEFEATURE_ARG_JOINERID
 #define NSS_CMD_ResumeFeature_ARG_Requester "Requester"
 #define NSS_CMD_ResumeFeature_ARG_FeatureID PM_PBC_CMD_RESUMEFEATURE_ARG_FEATUREID
+
+// Command - Replay
+#define NSS_CMD_Replay "NS_CMD_Replay"
+#define NSS_CMD_Replay_ARG_FeatureID PM_PBC_CMD_STARTFEATURE_ARG_FEATUREID
+
 
 // Events of Transfer
 #define NSS_CMD_Transfer_Event_Name NSS_EventName

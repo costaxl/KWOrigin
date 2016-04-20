@@ -102,6 +102,10 @@
 #define PM_DESKTOP_CONFIG_TESTERPASSWORD "PM_Desktop_TesterPassword"
 
 #define PM_DESKTOP_CONFIG_BlankDesktop "PM_DESKTOP_CONFIG_BlankDesktop"
+#define PM_DESKTOP_CONFIG_BlankDesktop_HeaderString "PM_DESKTOP_CONFIG_BlankDesktop_HeaderString"
+#define PM_DESKTOP_CONFIG_EnableFixImage "PM_DESKTOP_CONFIG_EnableFixImage"
+#define PM_DESKTOP_CONFIG_ImageWidth "PM_DESKTOP_CONFIG_ImageWidth"
+#define PM_DESKTOP_CONFIG_ImageHeight "PM_DESKTOP_CONFIG_ImageHeight"
 
 
 // Feature - Cam
@@ -169,6 +173,9 @@
 #define PM_VSC_CONFIG_VSFILTER_NAME "PM_VSC_VSFilter_Name"
 
 #define PM_VSC_CONFIG_VSDEMUXER_NAME "PM_VSC_VSDemuxer_Name"
+
+#define PM_VSC_CONFIG_CURRENT_FPS "PM_VSC_Current_FPS"
+
 
 #define PM_VS_CONFIG_AV_USING_SINGLE "PM_VS_AV_Using_Single"
 #define PM_VS_CONFIG_MODE_PULL "PM_VS_Mode_Pull"

@@ -23,6 +23,8 @@
 #define PM_PBC_CMD_CR_NOTSUPPORT -3
 #define PM_PBC_CMD_CR_FEATURE_EXIST -4
 #define PM_PBC_CMD_CR_FEATURE_NOT_RUNNING -5
+#define PM_PBC_CMD_CR_TARGET_NOT_RESPONSE -6
+#define PM_PBC_CMD_CR_LastRequestNotFinish -7
 
 // MultiModeController
 #define PM_PBC_CMD_SET_STREAMMODE "PM_PBC_CMD_Set_StreamMode"
@@ -111,6 +113,8 @@
 
 #define PM_PBC_CMD_OpenMsgDataExchange_ARG_ExchangeType_One2One 0
 #define PM_PBC_CMD_OpenMsgDataExchange_ARG_ExchangeType_One2Other 1
+
+#define PM_PBC_PROPERTY_IsAdminExist "IsAdminExist"
 
 // VideoPlaybackController
 #define PM_PBC_PlayMode_LocalFile 1

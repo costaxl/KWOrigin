@@ -63,6 +63,18 @@ static GUIAPPDelegate* defaultApp=nil;
     dic[@PM_Notification_Value] = [NSNumber numberWithInt:advprotocol];
     [[NotificationTranslatorApple defaultNotificationTranslator] PostNotification:@PM_LANDOMAIN_CONFIG_ADVPROTOCOL NotificationData:dic];
 
+    dic = [[[NSMutableDictionary alloc] init] autorelease];
+    dic[@PM_Notification_Value] = [NSNumber numberWithBool:true];
+    [[NotificationTranslatorApple defaultNotificationTranslator] PostNotification:@PM_DESKTOP_CONFIG_EnableFixImage NotificationData:dic];
+    dic[@PM_Notification_Value] = [NSNumber numberWithInt:1280];
+    [[NotificationTranslatorApple defaultNotificationTranslator] PostNotification:@PM_DESKTOP_CONFIG_ImageWidth NotificationData:dic];
+    dic[@PM_Notification_Value] = [NSNumber numberWithInt:720];
+    [[NotificationTranslatorApple defaultNotificationTranslator] PostNotification:@PM_DESKTOP_CONFIG_ImageHeight NotificationData:dic];
+    
+    NSString* strHeader = @"KLIK Knkt";
+    dic[@PM_Notification_Value] = strHeader;
+    [[NotificationTranslatorApple defaultNotificationTranslator] PostNotification:@PM_DESKTOP_CONFIG_BlankDesktop_HeaderString NotificationData:dic];
+    
     defaultApp = self;
     m_pModelService = [[GUIModelService alloc] init];
     m_WebViewController = nil;
@@ -321,7 +333,7 @@ static GUIAPPDelegate* defaultApp=nil;
             m_bLandscape = true;
         }
 
-        [m_pModelService.m_NSSserver ChangeVideoDimension:imageSize.width height:imageSize.height];
+        //[m_pModelService.m_NSSserver ChangeVideoDimension:imageSize.width height:imageSize.height];
     }
     
 
