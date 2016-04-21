@@ -1444,7 +1444,7 @@
 				LastUpgradeCheck = 0420;
 				TargetAttributes = {
 					94CC4806154135C400502D71 = {
-						DevelopmentTeam = 35RUYBP42P;
+						DevelopmentTeam = JX4M9DYW82;
 					};
 				};
 			};
@@ -1912,7 +1912,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.aevermax.iDocShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klikboks.iDocShare;
 				PRODUCT_NAME = iDocShare;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "./**";
@@ -1944,7 +1944,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.aevermax.iDocShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klikboks.iDocShare;
 				PRODUCT_NAME = iDocShare;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "./**";
@@ -1976,7 +1976,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.aevermax.iDocShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klikboks.iDocShare;
 				PRODUCT_NAME = iDocShare;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "./**";
